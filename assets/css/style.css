@@ -294,17 +294,20 @@ h6 {
   font-size: 12px;
   letter-spacing: 1px;
   display: inline-block;
-  padding: 12px 40px;
+  padding: 12px 30px;
   border-radius: 50px;
   transition: 0.5s;
   margin-top: 30px;
-  width: 150px;
   color: #fff;
   background: #34b7a7;
+  border: 2px solid #34b7a7;
+  text-decoration: none;
 }
 
 #hero .btn-about:hover {
-  background: #3dc8b7;
+  background: transparent;
+  color: #34b7a7;
+  border-color: #34b7a7;
 }
 
 @media (min-width: 1024px) {
@@ -691,15 +694,175 @@ section {
 --------------------------------------------------------------*/
 
 /* Hero Section Enhancements */
+.hero-content {
+  padding: 20px 0;
+}
+
+.hero-badge {
+  display: inline-block;
+  background: linear-gradient(135deg, #34b7a7, #2a9d8f);
+  color: white;
+  padding: 8px 20px;
+  border-radius: 25px;
+  font-size: 14px;
+  font-weight: 600;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 15px rgba(52, 183, 167, 0.3);
+}
+
+.hero-content h1 {
+  font-size: 3.5rem;
+  font-weight: 700;
+  color: #222;
+  margin-bottom: 15px;
+  line-height: 1.2;
+}
+
+.hero-content h2 {
+  font-size: 1.5rem;
+  color: #666;
+  margin-bottom: 25px;
+  line-height: 1.4;
+}
+
+.title-highlight {
+  color: #34b7a7;
+  font-weight: 700;
+}
+
+.title-separator {
+  color: #ccc;
+  margin: 0 10px;
+}
+
+.title-sub {
+  color: #666;
+  font-weight: 500;
+}
+
+.hero-description {
+  margin-bottom: 30px;
+}
+
+.lead-text {
+  font-size: 1.1rem;
+  color: #333;
+  margin-bottom: 15px;
+  line-height: 1.6;
+}
+
+.description-text {
+  font-size: 1rem;
+  color: #666;
+  margin-bottom: 20px;
+  line-height: 1.6;
+}
+
+.tech-highlight {
+  background: linear-gradient(135deg, #34b7a7, #2a9d8f);
+  color: white;
+  padding: 2px 8px;
+  border-radius: 4px;
+  font-weight: 600;
+  font-size: 0.9em;
+}
+
+.location-info {
+  display: flex;
+  align-items: center;
+  color: #34b7a7;
+  font-weight: 500;
+  font-size: 0.95rem;
+}
+
+.location-info i {
+  margin-right: 8px;
+  font-size: 1.1rem;
+}
+
+.hero-buttons {
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+.hero-buttons .btn-about,
+.hero-buttons .btn-get-started {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 12px 25px;
+  border-radius: 50px;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 14px;
+  transition: all 0.3s ease;
+  border: 2px solid;
+}
+
+.hero-buttons .btn-about {
+  background: #34b7a7;
+  color: white;
+  border-color: #34b7a7;
+}
+
+.hero-buttons .btn-about:hover {
+  background: transparent;
+  color: #34b7a7;
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(52, 183, 167, 0.3);
+}
+
+.hero-buttons .btn-get-started {
+  background: transparent;
+  color: #34b7a7;
+  border-color: #34b7a7;
+}
+
+.hero-buttons .btn-get-started:hover {
+  background: #34b7a7;
+  color: white;
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(52, 183, 167, 0.3);
+}
+
 .hero-img {
   text-align: center;
+  position: relative;
 }
 
 .hero-img img {
   max-width: 100%;
   height: auto;
-  border-radius: 10px;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  border-radius: 15px;
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.hero-img:hover img {
+  transform: scale(1.02);
+}
+
+/* Responsive Design for Hero */
+@media (max-width: 768px) {
+  .hero-content h1 {
+    font-size: 2.5rem;
+  }
+  
+  .hero-content h2 {
+    font-size: 1.2rem;
+  }
+  
+  .hero-buttons {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  .hero-buttons .btn-about,
+  .hero-buttons .btn-get-started {
+    width: 100%;
+    justify-content: center;
+  }
 }
 
 .btn-get-started {
@@ -711,6 +874,12 @@ section {
   margin-left: 15px;
   transition: all 0.3s ease;
   border: 2px solid #34b7a7;
+  font-family: "Raleway", sans-serif;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 12px;
+  letter-spacing: 1px;
+  display: inline-block;
 }
 
 .btn-get-started:hover {
@@ -743,6 +912,11 @@ section {
   font-size: 48px;
   color: #34b7a7;
   margin-bottom: 20px;
+  display: block;
+}
+
+.achievement-box .icon i {
+  display: block;
 }
 
 .achievement-box h4 {
@@ -825,6 +999,46 @@ section {
   margin: 0 auto;
 }
 
+/* Soft Skills Section */
+.soft-skills {
+  padding: 60px 0;
+  background: #f8f9fa;
+}
+
+.skill-category {
+  background: #fff;
+  padding: 30px;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+  height: 100%;
+  margin-bottom: 30px;
+}
+
+.skill-category:hover {
+  transform: translateY(-5px);
+}
+
+.skill-icon {
+  font-size: 48px;
+  color: #34b7a7;
+  margin-bottom: 20px;
+}
+
+.skill-category h4 {
+  font-size: 20px;
+  font-weight: 600;
+  color: #222;
+  margin-bottom: 15px;
+}
+
+.skill-category p {
+  color: #666;
+  line-height: 1.6;
+  font-size: 14px;
+}
+
 /* Responsive Design */
 @media (max-width: 768px) {
   .hero-img {
@@ -844,5 +1058,9 @@ section {
   
   .achievement-box {
     margin-bottom: 30px;
+  }
+  
+  .skill-category {
+    margin-bottom: 20px;
   }
 }

@@ -7,7 +7,7 @@
 
 ## 🚀 About Me
 
-With over **6 years of professional experience**, I'm a Senior Software Engineer specializing in full-stack development with a focus on front-end technologies. I'm passionate about driving product innovation and have a proven track record of leading projects that boost user engagement by 20% and reduce costs by 25%.
+With over **6 years of professional experience**, I'm a Senior Software Engineer specializing in full-stack development with expertise in React, TypeScript, Node.js, and AWS. I excel in microservices architecture, CI/CD processes, and accessibility implementation. Led comprehensive accessibility audits that increased site accessibility scores from 20% to 70%. Known for my collaborative approach, strong communication skills, and ability to mentor junior developers.
 
 ## 🛠️ Tech Stack
 
@@ -40,7 +40,7 @@ With over **6 years of professional experience**, I'm a Senior Software Engineer
 
 ## 📫 How to Reach Me
 
-- 📧 **Email:** maryamghafarinia92@gmail.com
+- 📧 **Email:** maryam.qfr2020@gmail.com
 - 📱 **Phone:** +49-1794260215
 - 💼 **LinkedIn:** [maryamghafarinia-97b699111](https://linkedin.com/in/maryamghafarinia-97b699111)
 - 🌐 **Website:** [maryamghafarinia.github.io](https://maryamghafarinia.github.io)
